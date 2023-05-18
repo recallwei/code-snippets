@@ -1,6 +1,7 @@
 {
   "private": true,
   "name": "app-name",
+  "description": "",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "repository": "github:recallwei/repo",
   "scripts": {},
