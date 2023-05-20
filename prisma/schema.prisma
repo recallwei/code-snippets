@@ -20,7 +20,7 @@ enum SystemRole {
   ADMIN @map("admin")
   USER  @map("user")
 
-  @@map("role")
+  @@map("system_role")
 }
 
 enum AuthType {
