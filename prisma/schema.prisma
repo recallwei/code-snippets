@@ -9,9 +9,9 @@ generator client {
 }
 
 enum Gender {
-  UNDEFINED
-  MALE
-  FEMALE
+  UNDEFINED @map("undefined")
+  MALE      @map("male")
+  FEMALE    @map("female")
 
   @@map("gender")
 }
@@ -95,6 +95,8 @@ model Setting {
   updatedBy String?   @map("updated_by") @db.VarChar(255)
   deletedAt DateTime? @map("deleted_at") @db.Timestamptz(3)
   deletedBy String?   @map("deleted_by") @db.VarChar(255)
+
+  @@map("setting")
 }
 
 model Role {
@@ -112,6 +114,8 @@ model Role {
   userId      Int
   userUuid    String       @unique @map("user_uuid") @db.VarChar(1000)
   permissions Permission[]
+
+  @@map("role")
 }
 
 model Permission {
@@ -132,4 +136,6 @@ model Permission {
   Role        Role      @relation(fields: [roleId], references: [id])
   roleId      Int
   roleUuid    String    @unique @map("role_uuid") @db.VarChar(1000)
+
+  @@map("permission")
 }
