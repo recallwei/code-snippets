@@ -1,5 +1,17 @@
 # App Name
 
+## Feature
+
+- [ ] xxx
+- [ ] xxx
+- [ ] xxx
+
+## Tech Stack
+
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
+
 ## Usage
 
 ### Install
