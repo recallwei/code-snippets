@@ -6,7 +6,7 @@ module.exports = {
   endOfLine: 'lf',
   htmlWhitespaceSensitivity: 'css',
   jsxSingleQuote: false,
-  printWidth: 120,
+  printWidth: 80,
   proseWrap: 'preserve',
   quoteProps: 'as-needed',
   semi: false,
@@ -15,6 +15,5 @@ module.exports = {
   tabWidth: 2,
   trailingComma: 'none',
   useTabs: false,
-  vueIndentScriptAndStyle: false,
-  plugins: ['prettier-plugin-tailwindcss'] // With Tailwind
+  vueIndentScriptAndStyle: false
 }
