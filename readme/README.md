@@ -1,6 +1,6 @@
 # App Name
 
-## Feature
+## Features
 
 - [ ] xxx
 - [ ] xxx

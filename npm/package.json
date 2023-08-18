@@ -3,13 +3,13 @@
   "name": "app-name",
   "description": "",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
-  "repository": "github:recallwei/repo",
+  "repository": "github:recallwei/repo-name",
   "scripts": {},
   "dependencies": {},
   "devDependencies": {},
   "packageManager": "pnpm@8.5.0",
   "engines": {
-    "node": ">=18.15.0",
+    "node": ">=18.17.0",
     "npm": ">=9.2.0"
   },
   "license": "MIT"
