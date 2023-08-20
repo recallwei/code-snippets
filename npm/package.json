@@ -4,7 +4,15 @@
   "description": "",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "repository": "github:recallwei/repo-name",
-  "scripts": {},
+  "scripts": {
+    "cspell:check": "cspell \"**\"",
+    "cspell:sort": "node ./scripts/cspell-sort.js",
+    "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
+    "eslint:fix": "pnpm eslint:check --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --check --write --ignore-unknown .",
+    "prepare": "husky install"
+  },
   "dependencies": {},
   "devDependencies": {},
   "packageManager": "pnpm@8.5.0",
