@@ -1,0 +1,32 @@
+{
+  "type": "module",
+  "name": "code-snippets",
+  "description": "⌨️ Some code snippets makes your life better!",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "private": true,
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview",
+    "cspell:check": "cspell \"**\"",
+    "cspell:sort": "node ./scripts/cspell-sort.js",
+    "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
+    "eslint:fix": "pnpm eslint:check --fix",
+    "prettier:check": "prettier --check .",
+    "prettier:fix": "prettier --check --write --ignore-unknown .",
+    "prepare": "husky install"
+  },
+  "packageManager": "pnpm@8.5.0",
+  "engines": {
+    "node": ">=18.17.1",
+    "npm": ">=9.2.0"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@brucesong/eslint-config-vue": "^1.0.7",
+    "cspell": "^7.0.1",
+    "husky": "^8.0.3",
+    "prettier": "^3.0.2",
+    "vitepress": "1.0.0-rc.4"
+  }
+}
