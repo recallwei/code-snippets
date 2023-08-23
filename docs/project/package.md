@@ -11,7 +11,6 @@
   "repository": "github:recallwei/repo-name",
   "scripts": {
     "cspell:check": "cspell \"**\"",
-    "cspell:sort": "node ./scripts/cspell-sort.js",
     "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
     "eslint:fix": "pnpm eslint:check --fix",
     "prettier:check": "prettier --check .",
