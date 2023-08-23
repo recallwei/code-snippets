@@ -5,9 +5,9 @@
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "private": true,
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "cspell:check": "cspell \"**\"",
     "cspell:sort": "node ./scripts/cspell-sort.js",
     "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
@@ -23,10 +23,11 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@brucesong/eslint-config-vue": "^1.0.7",
     "cspell": "^7.0.1",
+    "eslint": "^8.47.0",
     "husky": "^8.0.3",
     "prettier": "^3.0.2",
-    "vitepress": "1.0.0-rc.4"
+    "vitepress": "1.0.0-rc.4",
+    "vue": "^3.3.4"
   }
 }

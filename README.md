@@ -1,6 +1,7 @@
 # Code Snippets
 
-⌨️ Some code snippets makes your life better!
+No more config and template code.  
+Free your hands, making your life better!
 
 ## License
 

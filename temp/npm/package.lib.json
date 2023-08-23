@@ -7,9 +7,7 @@
   "homepage": "https://github.com/recallwei/project#readme",
   "bugs": "https://github.com/recallwei/project/issues",
   "keywords": [],
-  "files": [
-    "src/*"
-  ],
+  "files": ["src/*"],
   "main": "src/index.js",
   "scripts": {},
   "peerDependencies": {},

@@ -2,8 +2,8 @@
 node_modules
 
 # Production
-.vitepress/dist
-.vitepress/cache
+/docs/.vitepress/dist
+/docs/.vitepress/cache
 
 # Logs
 logs
