@@ -4,7 +4,8 @@
 
 ```bash
 pnpm add -D husky lint-staged
-pnpm dlx husky-init && pnpm install
+pnpm dlx husky-init
+pnpm i
 npx husky add .husky/pre-commit 'pnpm cspell:check'
 npx husky add .husky/pre-commit 'npx lint-staged'
 npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
