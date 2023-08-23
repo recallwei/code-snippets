@@ -1,12 +1,16 @@
 # Prettier
 
+## Installation
+
+```bash
+pnpm add -D prettier
+```
+
 ## Configuration
 
-### Common、React
+::: code-group
 
-prettierrc.json
-
-```json
+```json [React]
 {
   "arrowParens": "always",
   "bracketSameLine": false,
@@ -27,11 +31,7 @@ prettierrc.json
 }
 ```
 
-### Vue
-
-prettierrc.json
-
-```json{18}
+```json{18} [Vue]
 {
   "arrowParens": "always",
   "bracketSameLine": false,
@@ -49,15 +49,11 @@ prettierrc.json
   "tabWidth": 2,
   "trailingComma": "none",
   "useTabs": false,
-  "vueIndentScriptAndStyle": false
+  "vueIndentScriptAndStyle": false // [!code ++]
 }
 ```
 
-### Astro
-
-prettierrc.js
-
-```js
+```js [Astro]
 module.exports = {
   arrowParens: 'always',
   bracketSameLine: false,
@@ -88,7 +84,9 @@ module.exports = {
 }
 ```
 
-### .prettierignore
+:::
+
+## Ignore files
 
 ```txt
 .husky

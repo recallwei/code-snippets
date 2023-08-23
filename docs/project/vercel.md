@@ -1,8 +1,11 @@
+# vercel.json
+
+```json
 {
   "rewrites": [
     {
-      "source": "/api-prefix/:path*",
-      "destination": "http://localhost:3000/:path*"
+      "source": "/base-api/:path*",
+      "destination": "https://api-url/:path*"
     },
     {
       "source": "/:path*",
@@ -10,3 +13,4 @@
     }
   ]
 }
+```

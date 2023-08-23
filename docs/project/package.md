@@ -1,3 +1,8 @@
+# package.json
+
+::: code-group
+
+```json [Project]
 {
   "private": true,
   "name": "app-name",
@@ -22,3 +27,26 @@
   },
   "license": "MIT"
 }
+```
+
+```json [Lib]
+{
+  "name": "app-name",
+  "version": "0.0.1",
+  "description": "",
+  "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
+  "repository": "github:recallwei/repo",
+  "homepage": "https://github.com/recallwei/project#readme",
+  "bugs": "https://github.com/recallwei/project/issues",
+  "keywords": [],
+  "files": ["src/*"],
+  "main": "src/index.js",
+  "scripts": {},
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "license": "MIT"
+}
+```
+
+:::
