@@ -42,7 +42,7 @@ export default defineConfig({
           { text: '.nvmrc', link: '/project/nvmrc' },
           { text: 'pnpm-workspace.yaml', link: '/project/pnpm-workspace' },
           { text: 'Git Related', link: '/project/git-related' },
-          { text: 'CSpell', link: '/project/cspell' },
+          { text: '.cspell.json', link: '/project/cspell' },
           { text: 'README.md', link: '/project/readme' },
           { text: 'LICENSE', link: '/project/license' },
           { text: '.markdownlint.jsonc', link: '/project/markdownlint' },

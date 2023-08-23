@@ -5,7 +5,7 @@
 - [.nvmrc](./nvmrc)
 - [pnpm-workspace.yaml](./pnpm-workspace)
 - [Git Related](./git-related)
-- [CSpell](./cspell)
+- [.cspell.json](./cspell)
 - [README.md](./readme.md)
 - [LICENSE](./license.md)
 - [.markdownlint.jsonc](./markdownlint)
