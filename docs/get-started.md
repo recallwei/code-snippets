@@ -1,3 +1,3 @@
 # Get Started
 
-- [Project Configuration](./project/)
+- [Project Configuration](./package)
