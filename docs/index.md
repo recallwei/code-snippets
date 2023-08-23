@@ -1,6 +1,9 @@
 ---
 layout: home
 
+title: Code Snippets
+titleTemplate: No more config and template code, free your hands, making your life better!
+
 hero:
   name: Code Snippets
   text: No more config and template code
