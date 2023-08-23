@@ -14,7 +14,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /get-started
+      link: /guide/get-started
     - theme: alt
       text: View on GitHub
       link: https://github.com/recallwei/code-snippets#readme
@@ -30,3 +30,14 @@ features:
     icon: ✌️
     details: Free your hands, making your life better!
 ---
+
+<script setup>
+import { VPTeamMembers } from 'vitepress/theme'
+import { contributors } from './constants'
+</script>
+
+<br/>
+
+<div style="text-align: center;margin: 100px 0 40px 0;font-size: 20px;font-weight: 600;">Contributors</div>
+
+<VPTeamMembers size="small" :members="contributors" />

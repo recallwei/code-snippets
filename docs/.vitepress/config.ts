@@ -20,50 +20,68 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: ogDescription }]
   ],
 
+  lastUpdated: true,
+
   themeConfig: {
     logo: '/logo.png',
 
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Documentation', link: '/get-started' }
+      { text: 'Guide', link: '/guide/get-started' },
+      { text: 'Reference', link: '/reference/project/package-json' }
     ],
 
-    sidebar: [
-      {
-        text: 'Documentation',
-        items: [{ text: 'Get Started', link: '/get-started' }]
-      },
-      {
-        text: 'Project Configuration',
-        items: [
-          { text: 'package.json', link: '/project/package' },
-          { text: '.npmrc', link: '/project/npmrc' },
-          { text: '.nvmrc', link: '/project/nvmrc' },
-          { text: 'pnpm-workspace.yaml', link: '/project/pnpm-workspace' },
-          { text: 'Git Related', link: '/project/git-related' },
-          { text: '.cspell.json', link: '/project/cspell' },
-          { text: 'README.md', link: '/project/readme' },
-          { text: 'LICENSE', link: '/project/license' },
-          { text: '.markdownlint.jsonc', link: '/project/markdownlint' },
-          { text: '.editorconfig', link: '/project/editorconfig' },
-          { text: 'jsconfig.json', link: '/project/jsconfig' },
-          { text: 'tsconfig.json', link: '/project/tsconfig' },
-          { text: 'Prettier', link: '/project/prettier' },
-          { text: 'ESLint', link: '/project/eslint' },
-          { text: 'husky', link: '/project/husky' },
-          { text: 'lint-staged', link: '/project/lint-staged' },
-          { text: 'Commitizen', link: '/project/commitizen' },
-          { text: 'CHANGELOG.md', link: '/project/changelog' },
-          { text: 'CODE_OF_CONDUCT.md', link: '/project/code-of-conduct' },
-          { text: 'CONTRIBUTING.md', link: '/project/contributing' },
-          { text: 'CONTRIBUTORS.md', link: '/project/contributors' },
-          { text: 'SECURITY.md', link: '/project/security' },
-          { text: 'vercel.json', link: '/project/vercel' },
-          { text: 'netlify.toml', link: '/project/netlify' },
-          { text: 'Prisma', link: '/project/prisma' }
-        ]
-      }
-    ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: 'Introduction',
+          items: [{ text: 'Get Started', link: '/guide/get-started' }]
+        }
+      ],
+      '/reference/': [
+        {
+          text: 'Project Configuration',
+          collapsed: false,
+          items: [
+            { text: 'package.json', link: '/reference/project/package-json' },
+            { text: '.npmrc', link: '/reference/project/npmrc' },
+            { text: '.nvmrc', link: '/reference/project/nvmrc' },
+            {
+              text: 'pnpm-workspace.yaml',
+              link: '/reference/project/pnpm-workspace'
+            },
+            { text: 'Git Related', link: '/reference/project/git-related' },
+            { text: '.cspell.json', link: '/reference/project/cspell' },
+            { text: 'README.md', link: '/reference/project/readme' },
+            { text: 'LICENSE', link: '/reference/project/license' },
+            { text: '.editorconfig', link: '/reference/project/editorconfig' },
+            { text: 'jsconfig.json', link: '/reference/project/jsconfig' },
+            { text: 'tsconfig.json', link: '/reference/project/tsconfig' },
+            { text: 'Prettier', link: '/reference/project/prettier' },
+            { text: 'ESLint', link: '/reference/project/eslint' },
+            { text: 'husky', link: '/reference/project/husky' },
+            { text: 'lint-staged', link: '/reference/project/lint-staged' },
+            { text: 'Commitizen', link: '/reference/project/commitizen' },
+            { text: 'CHANGELOG.md', link: '/reference/project/changelog' },
+            {
+              text: 'CODE_OF_CONDUCT.md',
+              link: '/reference/project/code-of-conduct'
+            },
+            {
+              text: 'CONTRIBUTING.md',
+              link: '/reference/project/contributing'
+            },
+            {
+              text: 'CONTRIBUTORS.md',
+              link: '/reference/project/contributors'
+            },
+            { text: 'SECURITY.md', link: '/reference/project/security' },
+            { text: 'vercel.json', link: '/reference/project/vercel' },
+            { text: 'netlify.toml', link: '/reference/project/netlify' },
+            { text: 'Prisma', link: '/reference/project/prisma' }
+          ]
+        }
+      ]
+    },
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/recallwei/code-snippets' }
@@ -80,7 +98,19 @@ export default defineConfig({
       copyright: 'Copyright © 2023-present Bruce Song'
     },
 
-    outline: 'deep'
+    outline: 'deep',
+
+    search: {
+      provider: 'local'
+    },
+
+    lastUpdated: {
+      text: 'Updated at',
+      formatOptions: {
+        dateStyle: 'full',
+        timeStyle: 'medium'
+      }
+    }
   },
   markdown: {
     theme: 'dracula',

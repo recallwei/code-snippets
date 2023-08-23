@@ -15,12 +15,6 @@
     "prettier:fix": "prettier --check --write --ignore-unknown .",
     "prepare": "husky install"
   },
-  "packageManager": "pnpm@8.5.0",
-  "engines": {
-    "node": ">=18.17.1",
-    "npm": ">=9.2.0"
-  },
-  "license": "MIT",
   "devDependencies": {
     "cspell": "^7.0.1",
     "eslint": "^8.47.0",
@@ -28,5 +22,11 @@
     "prettier": "^3.0.2",
     "vitepress": "1.0.0-rc.4",
     "vue": "^3.3.4"
-  }
+  },
+  "packageManager": "pnpm@8.5.0",
+  "engines": {
+    "node": ">=18.17.1",
+    "npm": ">=9.2.0"
+  },
+  "license": "MIT"
 }

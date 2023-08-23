@@ -12,3 +12,10 @@
   "exclude": ["node_modules", "dist"]
 }
 ```
+
+```json
+{
+  "include": ["**/*.js"],
+  "exclude": ["**/node_modules/*", "**/dist/**"]
+}
+```
