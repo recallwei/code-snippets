@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
@@ -12,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /markdown-examples
+      link: /get-started
     - theme: alt
       text: View on GitHub
       link: https://github.com/recallwei/code-snippets#readme

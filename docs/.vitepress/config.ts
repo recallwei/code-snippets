@@ -1,13 +1,15 @@
 import { defineConfig } from 'vitepress'
 
-const ogDescription = 'An Opinionated front-end tooling'
-const ogImage = 'https://tornado.brucesong.xyz/og-image.png'
-const ogTitle = 'Tornado'
-const ogUrl = 'https://tornado.brucesong.xyz'
+const ogDescription =
+  'No more config and template code, free your hands, making your life better!'
+const ogImage = 'https://code.brucesong.xyz/og-image.png'
+const ogTitle = 'Code Snippets'
+const ogUrl = 'https://code.brucesong.xyz'
 
 export default defineConfig({
   title: 'Code Snippets',
-  description: '⌨️ Some code snippets makes your life better!',
+  description:
+    'No more config and template code, free your hands, making your life better!',
 
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.png' }],
@@ -23,21 +25,35 @@ export default defineConfig({
 
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Examples', link: '/markdown-examples' }
+      { text: 'Documentation', link: '/get-started' }
     ],
 
     sidebar: [
       {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
+        text: 'Documentation',
+        items: [{ text: 'Get Started', link: '/get-started' }]
+      },
+      {
+        text: 'Project',
+        items: [{ text: 'Prettier', link: '/project/prettier' }]
       }
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+      { icon: 'github', link: 'https://github.com/recallwei/code-snippets' }
+    ],
+
+    editLink: {
+      pattern:
+        'https://github.com/recallwei/code-snippets/edit/main/docs/:path',
+      text: 'Edit this page in GitHub'
+    },
+
+    footer: {
+      message: `Released under the MIT License. Deploy by Vercel.`,
+      copyright: 'Copyright © 2023-present Bruce Song'
+    },
+
+    outline: 'deep'
   }
 })
