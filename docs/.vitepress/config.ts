@@ -35,7 +35,6 @@ export default defineConfig({
       },
       {
         text: 'Project Configuration',
-        link: '/project/',
         items: [
           { text: 'package.json', link: '/project/package' },
           { text: '.npmrc', link: '/project/npmrc' },
