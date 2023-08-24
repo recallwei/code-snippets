@@ -6,14 +6,9 @@
   NODE_OPTIONS = "--max_old_space_size=4096"
 
 [build]
-  publish = "docs/.vitepress/dist"
-  command = "pnpm run docs:build"
+  publish = ".vitepress/dist"
+  command = "pnpm run build"
 
 [functions]
   node_bundler = "esbuild"
-
-[[redirects]]
-  from = "/dir/*"
-  to = "/dir/index.html"
-  status = 200
 ```
