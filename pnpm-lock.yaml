@@ -17,6 +17,9 @@ devDependencies:
   prettier:
     specifier: ^3.0.2
     version: 3.0.2
+  tornado-tools:
+    specifier: ^0.0.2
+    version: 0.0.2
   vitepress:
     specifier: 1.0.0-rc.4
     version: 1.0.0-rc.4(@algolia/client-search@4.19.1)(search-insights@2.7.0)
@@ -2163,6 +2166,12 @@ packages:
     engines: {node: '>=8.0'}
     dependencies:
       is-number: 7.0.0
+    dev: true
+
+  /tornado-tools@0.0.2:
+    resolution: {integrity: sha512-92aRZPIdSvBnqIdY9QOkjN/BPS3EEljm9TVgwSxmYhAi2AMSj8ydxfYf6zvK1tQ8mSYxx//cT8r6HQRHF8pZpQ==}
+    engines: {node: ^18.0.0 || >=20.0.0}
+    hasBin: true
     dev: true
 
   /tr46@0.0.3:
