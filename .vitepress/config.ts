@@ -24,7 +24,6 @@ export default defineConfig({
     ['meta', { property: 'og:url', content: ogUrl }],
     ['meta', { property: 'og:description', content: ogDescription }]
   ],
-
   lastUpdated: true,
 
   cleanUrls: true,
