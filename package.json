@@ -3,7 +3,6 @@
   "name": "code-snippets",
   "description": "⌨️ Some code snippets makes your life better!",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
-  "private": true,
   "scripts": {
     "docs:dev": "vitepress dev",
     "docs:build": "vitepress build",
@@ -30,5 +29,6 @@
     "node": ">=18.17.1",
     "npm": ">=9.2.0"
   },
+  "private": true,
   "license": "MIT"
 }

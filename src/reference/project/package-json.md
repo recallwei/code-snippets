@@ -9,7 +9,6 @@
   "name": "app-name",
   "description": "",
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
-  "private": true,
   "scripts": {
     "cspell:check": "cspell \"**\"",
     "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
@@ -25,7 +24,8 @@
     "node": ">=18.17.0",
     "npm": ">=9.2.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "private": true
 }
 ```
 
