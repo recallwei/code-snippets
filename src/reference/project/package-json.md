@@ -11,7 +11,7 @@
   "author": "Bruce Song <recall4056@gmail.com> (https://github.com/recallwei/)",
   "scripts": {
     "cspell:check": "cspell \"**\"",
-    "eslint:check": "eslint \"**/*.{ts,tsx,js,tsx,vue}\" --color",
+    "eslint:check": "eslint \"**/*.{ts,tsx,js,jsx,vue}\" --color",
     "eslint:fix": "pnpm eslint:check --fix",
     "prettier:check": "prettier --check .",
     "prettier:fix": "prettier --check --write --ignore-unknown .",
@@ -24,8 +24,8 @@
     "node": ">=18.17.0",
     "npm": ">=9.2.0"
   },
-  "license": "MIT",
-  "private": true
+  "private": true,
+  "license": "MIT"
 }
 ```
 
