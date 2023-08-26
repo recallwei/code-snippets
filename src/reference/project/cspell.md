@@ -24,7 +24,7 @@ pnpm add -D cspell
     }
   ],
   "ignorePaths": [
-    ".cspell",
+    ".cspell.txt",
     ".github/workflows/**",
     ".vscode/*.json",
     "**/.vercel",
