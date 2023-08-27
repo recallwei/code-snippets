@@ -13,8 +13,8 @@
     "cspell:check": "cspell \"**\"",
     "eslint:check": "eslint \"**/*.{ts,tsx,js,jsx,vue}\" --color",
     "eslint:fix": "pnpm eslint:check --fix",
-    "prettier:check": "prettier --check .",
-    "prettier:fix": "prettier --check --write --ignore-unknown .",
+    "prettier:check": "prettier --check --ignore-unknown .",
+    "prettier:fix": "prettier --write --ignore-unknown .",
     "preinstall": "npx only-allow pnpm"
   },
   "dependencies": {},
@@ -22,7 +22,7 @@
   "packageManager": "pnpm@8.5.0",
   "engines": {
     "node": ">=18.17.0",
-    "npm": ">=9.2.0"
+    "pnpm": ">=8.5.0"
   },
   "private": true,
   "license": "MIT"
