@@ -2,7 +2,9 @@
 
 ## Installation
 
-```bash
+::: code-group
+
+```bash [Single Repo]
 pnpm add -D husky lint-staged
 pnpm dlx husky-init
 pnpm i
@@ -11,6 +13,18 @@ npx husky add .husky/pre-commit 'npx lint-staged'
 npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
 npm pkg set scripts.prepare="husky install"
 ```
+
+```bash [Monorepo]
+pnpm add -Dw husky lint-staged
+pnpm dlx husky-init
+pnpm i
+npx husky add .husky/pre-commit 'pnpm cspell:check'
+npx husky add .husky/pre-commit 'npx lint-staged'
+npx husky add .husky/commit-msg 'npx --no -- commitlint --edit "$1"'
+npm pkg set scripts.prepare="husky install"
+```
+
+:::
 
 ## Configuration
 

@@ -23,6 +23,9 @@
     "**/**/CHANGELOG.md",
     "**/**/CONTRIBUTORS.md",
     "pnpm-lock.yaml",
-    "README.md"
+    "README.md",
+    "src/reference/project/git-related.md",
+    "src/reference/project/prettier.md",
+    "src/reference/project/prisma.md"
   ]
 }
