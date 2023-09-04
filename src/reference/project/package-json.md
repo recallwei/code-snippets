@@ -19,11 +19,6 @@
   },
   "dependencies": {},
   "devDependencies": {},
-  "packageManager": "pnpm@8.5.0",
-  "engines": {
-    "node": ">=18.17.0",
-    "pnpm": ">=8.5.0"
-  },
   "private": true,
   "license": "MIT"
 }
