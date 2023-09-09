@@ -14,7 +14,7 @@ export default {
        */
     })
   },
-  enhanceApp({ app, router, siteData }) {
+  enhanceApp({ app, router, siteData }: any) {
     // ...
   }
 }
