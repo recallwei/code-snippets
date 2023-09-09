@@ -46,3 +46,10 @@ npx --no -- commitlint --edit ${1}
 ```
 
 :::
+
+## Not work on MacOS
+
+```bash
+chmod ug+x .husky/*
+chmod ug+x .git/hooks/*
+```
