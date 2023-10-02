@@ -29,6 +29,16 @@ If use `cz-git`, you should add adaptor config in `package.json`.
 }
 ```
 
+Add script in `package.json`.
+
+```json [package.json]
+{
+  "scripts": {
+    "cz": "git-cz"
+  }
+}
+```
+
 :::
 
 ## Configuration
