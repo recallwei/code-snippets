@@ -19,7 +19,7 @@
 ```json [Only TS]
 {
   "**/*.{js,ts}": ["eslint --fix", "prettier --write"],
-  "**/*.{md}": ["prettier --write"]
+  "**/*.md": ["prettier --write"]
 }
 ```
 
