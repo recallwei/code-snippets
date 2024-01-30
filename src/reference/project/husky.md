@@ -9,7 +9,7 @@ pnpm add -D husky lint-staged
 pnpm i
 npx husky init
 echo "pnpm cspell:check" > .husky/pre-commit
-echo "npx lint-staged" > .husky/pre-commit
+echo "npx lint-staged" >> .husky/pre-commit
 echo "npx --no -- commitlint --edit \"$1\"" > .husky/commit-msg
 ```
 
@@ -18,7 +18,7 @@ pnpm add -Dw husky lint-staged
 pnpm i
 npx husky init
 echo "pnpm cspell:check" > .husky/pre-commit
-echo "npx lint-staged" > .husky/pre-commit
+echo "npx lint-staged" >> .husky/pre-commit
 echo "npx --no -- commitlint --edit \"$1\"" > .husky/commit-msg
 ```
 
