@@ -8,20 +8,18 @@
 pnpm add -D husky lint-staged
 pnpm i
 npx husky init
-echo "pnpm cspell:check" > .husky/pre-commit
-echo "npx lint-staged" >> .husky/pre-commit
-echo "npx --no -- commitlint --edit \"$1\"" > .husky/commit-msg
+echo 'pnpm cspell:check' > .husky/pre-commit
+echo 'npx lint-staged' >> .husky/pre-commit
+echo 'npx --no -- commitlint --edit "$1"' > .husky/commit-msg
 ```
 
-```bash [Monorepo]
+````bash [Monorepo]
 pnpm add -Dw husky lint-staged
 pnpm i
 npx husky init
-echo "pnpm cspell:check" > .husky/pre-commit
-echo "npx lint-staged" >> .husky/pre-commit
-echo "npx --no -- commitlint --edit \"$1\"" > .husky/commit-msg
-```
-
+echo 'pnpm cspell:check' > .husky/pre-commit
+echo 'npx lint-staged' >> .husky/pre-commit
+echo 'npx --no -- commitlint --edit "$1"' > .husky/commit-msg
 :::
 
 ## Configuration
@@ -30,11 +28,11 @@ echo "npx --no -- commitlint --edit \"$1\"" > .husky/commit-msg
 
 ```txt [pre-commit]
 pnpm cspell:check
-npx lint-staged
-```
+pnpm exec lint-staged
+````
 
 ```txt [commit-msg]
-npx --no -- commitlint --edit ${1}
+npx --no -- commitlint --edit "$1"
 ```
 
 :::

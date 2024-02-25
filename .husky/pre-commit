@@ -1,2 +1,2 @@
 pnpm cspell:check
-npx lint-staged
+pnpm exec lint-staged
